@@ -11,6 +11,26 @@
 	  <class name="testScripts.BookHotelPageTest"/>		
     </classes>
   </test> <!-- Test -->
+
+   <test name="FirefoxTest">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+	  <class name="testScripts.LoginPageTest"/>		
+	  <class name="testScripts.SearchHotelPageTest"/>
+	  <class name="testScripts.SelectHotelPageTest"/>
+	  <class name="testScripts.BookHotelPageTest"/>	 
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="EdgeTest">
+  <parameter name="browser" value="Edge"/>
+    <classes>
+	  <class name="testScripts.LoginPageTest"/>		
+	  <class name="testScripts.SearchHotelPageTest"/>
+	  <class name="testScripts.SelectHotelPageTest"/>
+	  <class name="testScripts.BookHotelPageTest"/>	 
+    </classes>
+    </test> <!-- Test -->
 	
  
 </suite> <!--Suite -->
