@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="4" parallel="classes" name="FirefoxTest(failed)(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testScripts.BookHotelPageTest">
+        <methods>
+          <include name="verifyBookNowButton"/>
+          <include name="closeBrowser"/>
+          <include name="clearObjects"/>
+          <include name="openBrowser"/>
+          <include name="cretePOMObjects"/>
+          <include name="logoutApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- testScripts.BookHotelPageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

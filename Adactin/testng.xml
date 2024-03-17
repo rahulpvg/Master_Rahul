@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="4" parallel ="classes">
+
+	  <listeners>
+		  <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+	  </listeners>
+	
+	  	  <test name="ChromeTest">
+	  <parameter name="browser" value="chrome"/>
+	    <classes>
+		  <class name="testScripts.LoginPageTest"/>		
+		  <class name="testScripts.SearchHotelPageTest"/>
+		  <class name="testScripts.SelectHotelPageTest"/>
+		  <class name="testScripts.BookHotelPageTest"/>	 
+	    </classes>
+	    </test> 
+
+	   <test name="FirefoxTest">
+	  <parameter name="browser" value="Firefox"/>
+	    <classes>
+		  <class name="testScripts.LoginPageTest"/>		
+		  <class name="testScripts.SearchHotelPageTest"/>
+		  <class name="testScripts.SelectHotelPageTest"/>
+		  <class name="testScripts.BookHotelPageTest"/>	 
+	    </classes>
+	  </test> <!-- Test -->
+  
+	  <test name="EdgeTest">
+	  <parameter name="browser" value="Edge"/>
+	    <classes>
+		  <class name="testScripts.LoginPageTest"/>		
+		  <class name="testScripts.SearchHotelPageTest"/>
+		  <class name="testScripts.SelectHotelPageTest"/>
+		  <class name="testScripts.BookHotelPageTest"/>	 
+	    </classes>
+	    </test> <!-- Test -->
+	  
+	  
+</suite> <!-- Suite -->
