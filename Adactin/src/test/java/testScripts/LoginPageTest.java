@@ -54,9 +54,9 @@ public class LoginPageTest extends BaseClass {
 		{
 			driver = openEdgeBrowser();
 		}	
-//		driver.manage().window().maximize();
-//		driver.manage().deleteAllCookies();
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@BeforeClass
@@ -133,7 +133,6 @@ public class LoginPageTest extends BaseClass {
 	@AfterTest
 	public void closeBrowser()
 	{
-//		searchHotelPage.closetheApplication();
 		driver.close();
 		driver = null;		
 		System.gc();   		//Garbage Collector = deletes all the objects which are not in used(null)
